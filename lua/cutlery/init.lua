@@ -8,5 +8,6 @@ require('telescope').setup {
 }
 
 require("cutlery.remap")
+require("cutlery.set")
 
 vim.api.nvim_set_option("clipboard", "unnamed")
