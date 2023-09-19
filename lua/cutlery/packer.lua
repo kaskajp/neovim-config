@@ -30,6 +30,11 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
 
   use {
+    'nmac427/guess-indent.nvim',
+    config = function() require('guess-indent').setup {} end,
+  }
+
+  use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
 	  requires = {
